@@ -29,7 +29,8 @@
                         ${student.lastName}
                 </td>
                 <td>
-                        <%--linki--%>
+                    <a href="${pageContext.request.contextPath}/student/remove?stid=${student.id}">Remove</a>
+                    <a href="${pageContext.request.contextPath}/student/details?id=${student.id}">Details</a>
                 </td>
             </tr>
         </c:forEach>

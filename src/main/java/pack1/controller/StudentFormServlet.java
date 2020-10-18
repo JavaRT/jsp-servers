@@ -14,11 +14,13 @@ import java.time.LocalDate;
 @WebServlet("/student/form")
 public class StudentFormServlet extends HttpServlet {
     private final EntityDao<Student> studentEntityDao = new EntityDao<>();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // metoda ma za zada przesłać użytkownikowi treść formularza
         req.getRequestDispatcher("/student_form.jsp").forward(req, resp);
     }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Student student = new Student();
@@ -27,7 +29,9 @@ public class StudentFormServlet extends HttpServlet {
         student.setBirthDate(LocalDate.parse(req.getParameter("date_of_birth_field")));
         student.setGraduated(req.getParameter("graduated_field") != null); // on
         student.setHomeDistance(Double.parseDouble(req.getParameter("distance_field")));
+
         studentEntityDao.saveOrUpdate(student);
+
         resp.sendRedirect(req.getContextPath() + "/students");
     }
 }

@@ -5,12 +5,8 @@
 <head>
     <title>Title</title>
     <jsp:include page="headers.jsp"/>
-
 </head>
 <body>
-
-
-
 
 <jsp:include page="navigator.jsp"/>
 <div class="container">
