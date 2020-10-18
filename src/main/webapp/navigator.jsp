@@ -13,4 +13,10 @@
     <li>
         <a href="${pageContext.request.contextPath}/multiplication.jsp">Tabliczka mnożenia</a>
     </li>
+    <li>
+        <a href="${pageContext.request.contextPath}/students">Lista studentow</a>
+    </li>
+    <li>
+        <a href="${pageContext.request.contextPath}/student/form">Formularz studenta</a>
+    </li>
 </ul>

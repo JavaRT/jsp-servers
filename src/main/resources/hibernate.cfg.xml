@@ -8,8 +8,8 @@
             jdbc:mysql://localhost:3306/javagdy4_servlets?serverTimezone=Europe/Warsaw&amp;createDatabaseIfNotExist=true
         </property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="root">user</property>
-        <property name="qwerty147258369">user</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">qwerty147258369</property>
         <!--DB schema will be updated if needed -->
         <!--Hibernate model to data definition language-->
         <!--create - jeśli sda.ustawiony czyści bazę danych przed uruchomieniem i od nowa tworzy tabele-->

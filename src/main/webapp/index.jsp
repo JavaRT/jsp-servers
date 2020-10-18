@@ -8,6 +8,10 @@
 
 </head>
 <body>
+
+
+
+
 <jsp:include page="navigator.jsp"/>
 <div class="container">
 <h1>
